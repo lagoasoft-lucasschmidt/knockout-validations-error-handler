@@ -13,3 +13,6 @@ Uses feature _manualErrors_ from that extender.
 - [translateMessage]
   + function that receives a key, can return a translation of a message
 
+# Change log
+- 0.0.2
+-- fixed when accessing array paths, eg: consumers[0].id

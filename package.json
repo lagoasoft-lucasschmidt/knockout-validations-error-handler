@@ -1,6 +1,6 @@
 {
   "name": "knockout-validations-error-handler",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "To be used with knockout-validations-extender, it simply adds manual errors into observables.",
   "main": "lib/index.js",
   "scripts": {

@@ -3,7 +3,8 @@ ko = require 'knockout'
 props = require 'pathval'
 
 findChild = (observable, path)->
-  paths = path.split('.')
+  path = path.replace(/\[/g, '.').replace(/\]/g, '.')
+  paths = _.filter path.split('.'), (p)-> p?.length
   currentObj = observable
   for property, i in paths
     if !ko.unwrap(currentObj)[property]? then return
